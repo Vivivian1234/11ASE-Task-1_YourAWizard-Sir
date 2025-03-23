@@ -18,18 +18,22 @@ def search_pokemon(name):
             "weight": data["weight"],
             "types": [t["type"]["name"] for t in data["types"]]
         }
-        print(pokemon_info)
-        
+        return pokemon_info 
     else:
         print("\nPokémon not found.")
         return None
 
 def add_pokemon(name):
     """\nAdd a Pokémon to the Pokédex."""
-    pokemon = search_pokemon(name)
-    if pokemon:
+    pokemon = search_pokemon(name)  
+    if pokemon: 
         pokedex[pokemon["name"]] = pokemon
         print(f"{pokemon['name']} added to Pokédex.")
+        print("\nPokedex: \n")
+        view_pokedex()
+    else:
+        print(f"{name} was not found. Could not add to Pokédex.")
+
 
 def view_pokedex():
     """\nDisplay all collected Pokémon."""
@@ -44,6 +48,8 @@ def remove_pokemon(name):
     if name.capitalize() in pokedex:
         del pokedex[name.capitalize()]
         print(f"{name.capitalize()} removed from Pokédex.")
+        print("\nPokedex: \n")
+        view_pokedex()
     else:
         print("Pokémon not found in your Pokédex.")
 
