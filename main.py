@@ -21,6 +21,7 @@ def search_spell(name):
             }
             
             return spell_info  # Return the spell's details
+        
         else:
             print("\nSpell not found.")
             return None

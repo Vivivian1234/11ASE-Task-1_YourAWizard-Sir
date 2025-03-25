@@ -27,16 +27,29 @@
 
 # *Design*
 
-# *Development*
-----
----
----
----
----
----
+### **Structure Chart**
+\
+![Harry_Potter_Structure_Chart](/images/Harry%20Potter%20Structure%20Chart.png "Harry Potter Structure Chart")
+
+### **Algorithms**
+\
+![Harry_Potter_Algorithms](/images/Harry%20Potter%20Algorithm.png "Harry Potter Algorithms")
+
+### **Gant Chart**
+\
+hi
+
 # Data dictonary
 
 | Variable | Data Type | Format for Display | Size in Bytes | Size for Display | Description | Example | Validation |
 |----------|-----------|--------------------|---------------|------------------|-------------|---------|------------|
 |Spell name|String|Text|50|50|The name of the spell|Obliviate|Must be a non-empty string|
 |Description|String|Text|100|100|What the spell does after being cast|Erases the target's memory|Must be a non-empty string|
+
+
+# *Development*
+----
+---
+---
+---
+---
