@@ -27,17 +27,43 @@
 
 # *Design*
 
-### **Structure Chart**
+### **Gantt Chart**
+\
+hi
+
+### **Harry Potter Structure Chart**
 \
 ![Harry_Potter_Structure_Chart](/images/Harry%20Potter%20Structure%20Chart.png "Harry Potter Structure Chart")
+
+<u>Harry Potter Structure Chart Pseudocode</u>
+
+BEGIN main()\
+&ensp; &ensp; choice = 0\
+&ensp; &ensp; WHILE choice is not 5\
+&ensp; &ensp; &ensp; &ensp; INPUT choice\
+&ensp; &ensp; &ensp; &ensp; IF choice is 1 THEN\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; Search spell\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; IF API Request Valid THEN\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; Show spell data\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; ELSE\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; DISPLAY 'Invalid choice. Please try again.'\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; ENDIF\
+&ensp; &ensp; &ensp; &ensp; ELSEIF choice is 2 THEN\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; Store spell\
+&ensp; &ensp; &ensp; &ensp; ELSEIF choice is 3 THEN\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; Cast spell\
+&ensp; &ensp; &ensp; &ensp; ELIF choice is 4 THEN\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; Remove spell\
+&ensp; &ensp; &ensp; &ensp; ELSE\
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; DISPLAY 'Invalid choice. Please try again.'\
+&ensp; &ensp; &ensp; &ensp; ENDIF\
+&ensp; &ensp; ENDWHILE\
+END main()\
 
 ### **Algorithms**
 \
 ![Harry_Potter_Algorithms](/images/Harry%20Potter%20Algorithm.png "Harry Potter Algorithms")
 
-### **Gant Chart**
-\
-hi
 
 # Data dictonary
 
