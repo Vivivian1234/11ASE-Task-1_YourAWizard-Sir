@@ -1,6 +1,9 @@
 # 11ASE-Task-1_YourAWizard-Sir
 Enjoy the data of all the Harry Potter spells with its name and description! 
 
+This Python program allows you to retrieve spell information from an external API. The program uses the `requests` library to fetch data and can find, cast, store and remove from a spellbook.
+
+
 
 
 # Weather Program
