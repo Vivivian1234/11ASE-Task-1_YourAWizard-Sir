@@ -35,7 +35,7 @@ hi
 \
 ![Harry_Potter_Structure_Chart](/images/Harry%20Potter%20Structure%20Chart.png "Harry Potter Structure Chart")
 
-<u>Harry Potter Structure Chart Pseudocode</u>
+### **Harry Potter Structure Chart Pseudocode**
 
 BEGIN main()\
 &ensp; &ensp; choice = 0\
@@ -58,19 +58,41 @@ BEGIN main()\
 &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; DISPLAY 'Invalid choice. Please try again.'\
 &ensp; &ensp; &ensp; &ensp; ENDIF\
 &ensp; &ensp; ENDWHILE\
-END main()\
+END main()
 
-### **Harry Potter Main Algorithms**
+### **Harry Potter Main Algorithm**
 \
 ![Harry_Potter_Algorithms](/images/Harry%20Potter%20Algorithm.png "Harry Potter Algorithms")
 
 \
 ### **Harry Potter Sub Algorithm- Add_spell**
 
-\
+BEGIN add_spell(name)\
+&ensp; &ensp; &ensp; &ensp; CALL search_spell(name)\
+&ensp; &ensp; &ensp; &ensp; IF spell is found THEN\
+&ensp; &ensp; &ensp; &ensp; ADD spell to spellbook\
+&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spell added to spellbook.'\
+&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spellbook:'\
+&ensp; &ensp; &ensp; &ensp; CALL view_spellbook()\
+&ensp; &ensp; ELSE\
+&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spell not found. Could not add to your spellbook.'\
+&ensp; &ensp; ENDIF\
+END add_spell
+
 ### **Harry Potter Sub Algorithm- View_spellbook**
 
-\
+BEGIN add_spell(name)\
+&ensp; &ensp; CALL search_spell(name)\
+&ensp; &ensp; IF spell is found THEN\
+&ensp; &ensp; &ensp; &ensp; ADD spell to spellbook\
+&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spell added to spellbook.'\
+&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spellbook:'\
+&ensp; &ensp; &ensp; &ensp; ALL view_spellbook()\
+&ensp; &ensp; ELSE\
+&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spell not found. Could not add to your spellbook.'\
+&ensp; &ensp; ENDIF\
+END add_spell
+
 # *Data dictionary*
 
 | Variable | Data Type | Format for Display | Size in Bytes | Size for Display | Description | Example | Validation |
@@ -96,7 +118,7 @@ Explain how you would ensure the program remains compatible with new versions of
 
 Describe the steps you would take to fix a bug found in the program after deployment.
 
-Outline how you would maintain clear documentation and ensure the program remains easy to update in the future. </u>
+Outline how you would maintain clear documentation and ensure the program remains easy to update in the future.
 
 
 
