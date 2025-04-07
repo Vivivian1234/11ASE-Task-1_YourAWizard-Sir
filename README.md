@@ -3,26 +3,27 @@ Enjoy the data of all the Harry Potter spells with its name and description!
 
 This Python program allows you to retrieve spell information from an external API. The program uses the `requests` library to fetch data and can find, cast, store and remove from a spellbook.
 
-
-
-
-# Weather Program
-
-This Python program allows you to retrieve weather information from an external API. The program uses the `requests` library to fetch real-time weather data and `matplotlib` to visualise the weather conditions in a graphical format.
+## API link:
+https://hp-api.onrender.com/api/spells
 
 ## Features
-- Fetch weather data based on the user's location or a specified city.
-- Display current weather conditions, including temperature, humidity, and weather description.
-- Visualise weather data using a bar chart (e.g., temperature, humidity).
+
+- Allows users to search spells and add them to their spellbook
+- Allows users to remove spells from their spellbook
+- Allows users to view their spellbook
 
 ## Requirements
 To run this program, you need to install the following dependencies:
-
-- `matplotlib` for data visualisation.
 - `requests` to make HTTP requests to the weather API.
 
-### Install dependencies
+## Install dependencies
 To install the required dependencies, you can run:
 
 ```bash
-pip install -r requirements.txt
+pip install requests
+```
+<br>  
+<br>  
+
+# **NOTE**
+It is recommmened to have the API link open to help type the spell names, as the information is not diplsayed. Users who are unfamiliar with spells may find this API system less enjoyable due to the specific spelling required for the system to function smoothly :)
