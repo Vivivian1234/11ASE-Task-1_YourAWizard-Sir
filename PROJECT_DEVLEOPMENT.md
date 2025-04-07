@@ -63,23 +63,11 @@ END main()
 ### **Harry Potter Main Algorithm**
 \
 ![Harry_Potter_Algorithms](/images/Harry%20Potter%20Algorithm.png "Harry Potter Algorithms")
+<br>  
+---
+---
 
-\
-### **Harry Potter Sub Algorithm- Add_spell**
-
-BEGIN add_spell(name)\
-&ensp; &ensp; &ensp; &ensp; CALL search_spell(name)\
-&ensp; &ensp; &ensp; &ensp; IF spell is found THEN\
-&ensp; &ensp; &ensp; &ensp; ADD spell to spellbook\
-&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spell added to spellbook.'\
-&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spellbook:'\
-&ensp; &ensp; &ensp; &ensp; CALL view_spellbook()\
-&ensp; &ensp; ELSE\
-&ensp; &ensp; &ensp; &ensp; DISPLAY 'Spell not found. Could not add to your spellbook.'\
-&ensp; &ensp; ENDIF\
-END add_spell
-
-### **Harry Potter Sub Algorithm- View_spellbook**
+### **Harry Potter Pseudocode- Add_spell**
 
 BEGIN add_spell(name)\
 &ensp; &ensp; CALL search_spell(name)\
@@ -92,6 +80,33 @@ BEGIN add_spell(name)\
 &ensp; &ensp; &ensp; &ensp; DISPLAY 'Spell not found. Could not add to your spellbook.'\
 &ensp; &ensp; ENDIF\
 END add_spell
+
+### **Harry Potter Sub Algorithm- Add_spell**
+\
+![Harry Potter Sub Algorithm- Add_spell](image.png "Harry Potter Sub Algorithm- Add_spell")
+<br>  
+---
+--- 
+
+### **Harry Potter Sub Algorithm- View_spellbook**
+
+BEGIN view_spellbook\
+&ensp; &ensp; IF spellbook is not empty THEN\
+&ensp; &ensp; &ensp; &ensp; FOR each spell in spellbook \
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; DISPLAY spell name and description\
+&ensp; &ensp; &ensp; &ensp; ENDFOR\
+&ensp; &ensp; ELSE\
+&ensp; &ensp; &ensp; &ensp; DISPLAY 'Your spellbook is empty.'\
+&ensp; &ensp; ENDIF\
+END view_spellbook
+
+
+### **Harry Potter Sub Algorithm- View_spellbook**
+\
+![Harry Potter Sub Algorithm- View_spellbook](image.png "Harry Potter Sub Algorithm- View_spellbook")
+<br>  
+---
+--- 
 
 # *Data dictionary*
 
