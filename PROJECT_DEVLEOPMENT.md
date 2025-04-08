@@ -22,9 +22,38 @@
 * The application should have a maintained level of data integrity
 
 # *Determining Specifications*
-### *Functional Requirements*
+### *Functional Specifications*
 
+**User Requirements**\
+<u>What does the user need to be able to do? List all specifications here.</u>
 
+The user should be abe to understand the main menu and be able to give inputs that are required. They should be to choose what function to do (search spell, add spell, view spellbook, remove spell and exit program), as well as input spell names for those function to do.
+
+\
+**Inputs & Outputs**\
+<u>What inputs will the system need to accept and what outputs will it need to display?</u>
+
+The system should accept numbers from 1-5 for the main menu, and should be able to accept any string and display the ocrrect output whethere the input is a valid spell or not.
+
+\
+**Core Features**\
+<u>At its core, what specifically does the program need to be able to do?</u>
+
+The program should be able to search, store, remove spells and view the spellbook where added spells are stored. The system should display the spell and description of the spell for the user to be informed. The program should be able to load quickly and should be able to exit efficiently.
+
+\
+**User Interaction**\
+How will users interact with the system (e.g. command-line, GUI?) and what information will it need to provide to help users navigate?
+
+The system is text based, so the user will type inputs in command lines and the system will perform accordingly. The instrctions will be displayed in the main menu, as well as the README file for extra information.
+
+\
+Error Handling
+What possible errors could you face that need to be handled by the system?
+
+Possible errors 
+
+\
 # *Design*
 
 ### **Gantt Chart**
