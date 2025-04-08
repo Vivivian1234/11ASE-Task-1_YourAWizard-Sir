@@ -24,16 +24,17 @@
 # *Determining Specifications*
 ### *Functional Specifications*
 
+\
 **User Requirements**\
 <u>What does the user need to be able to do? List all specifications here.</u>
 
-The user should be abe to understand the main menu and be able to give inputs that are required. They should be to choose what function to do (search spell, add spell, view spellbook, remove spell and exit program), as well as input spell names for those function to do.
+The user should be able to understand the main menu and be able to give inputs that are required. They should be to choose what function to do (search spell, add spell, view spellbook, remove spell and exit program), as well as input spell names for those functions to do.
 
 \
 **Inputs & Outputs**\
 <u>What inputs will the system need to accept and what outputs will it need to display?</u>
 
-The system should accept numbers from 1-5 for the main menu, and should be able to accept any string and display the ocrrect output whethere the input is a valid spell or not.
+The system should accept numbers from 1-5 for the main menu, and should be able to accept any string and display the correct output whether the input is a valid spell or not.
 
 \
 **Core Features**\
@@ -43,17 +44,18 @@ The program should be able to search, store, remove spells and view the spellboo
 
 \
 **User Interaction**\
-How will users interact with the system (e.g. command-line, GUI?) and what information will it need to provide to help users navigate?
+<u>How will users interact with the system (e.g. command-line, GUI?) and what information will it need to provide to help users navigate?</u>
 
-The system is text based, so the user will type inputs in command lines and the system will perform accordingly. The instrctions will be displayed in the main menu, as well as the README file for extra information.
-
-\
-Error Handling
-What possible errors could you face that need to be handled by the system?
-
-Possible errors 
+The system is text based, so the user will type inputs in command lines and the system will perform accordingly. The instructions will be displayed in the main menu, as well as the README file for extra information.
 
 \
+**Error Handling**\
+<u>What possible errors could you face that need to be handled by the system?</u>
+
+Possible errors include an invalid input for the main menu and functions. When incorrect inputs are detected for search_spell, it will return "Spell not found." When incorrect inputs are detected for add_spell, it will return "{name} was not found. Could not add to your spellbook." When incorrect inputs are detected for remove_spell, it will return "Spell not found in your spellbook." When incorrect inputs are detected for the main menu screen, it will return "Invalid choice. Please try again." These errors have been detected and handled by the system and direct the user back to the main menu, ensuring there are no crashes and keeps the system running.
+
+<br>   
+
 # *Design*
 
 ### **Gantt Chart**
@@ -61,10 +63,18 @@ Possible errors
 hi
 
 ### **Harry Potter Structure Chart**
-\
-![Harry_Potter_Structure_Chart](/images/Harry%20Potter%20Structure%20Chart.png "Harry Potter Structure Chart")
 
-### **Harry Potter Structure Chart Pseudocode**
+\
+![Harry_Potter_Structure_Chart](/images/Harry_Potter_Structure_Chart.png "Harry Potter Structure Chart")
+
+
+### **Harry Potter Main Algorithm**
+\
+![Harry_Potter_Algorithms](/images/Harry%20Potter%20Algorithm.png "Harry Potter Algorithms")
+
+<br>   
+
+### **Harry Potter Algorithm Chart Pseudocode**
 
 BEGIN main()\
 &ensp; &ensp; choice = 0\
@@ -89,12 +99,10 @@ BEGIN main()\
 &ensp; &ensp; ENDWHILE\
 END main()
 
-### **Harry Potter Main Algorithm**
+### **Harry Potter Sub Algorithm- Add_spell**
 \
-![Harry_Potter_Algorithms](/images/Harry%20Potter%20Algorithm.png "Harry Potter Algorithms")
-<br>  
----
----
+![Harry Potter Sub Algorithm- Add_spell](/images/Harry%20Potter%20Sub%20Algorithm-%20Add_spell.png "Harry Potter Sub Algorithm- Add_spell")
+
 
 ### **Harry Potter Pseudocode- Add_spell**
 
@@ -110,12 +118,14 @@ BEGIN add_spell(name)\
 &ensp; &ensp; ENDIF\
 END add_spell
 
-### **Harry Potter Sub Algorithm- Add_spell**
-\
-![Harry Potter Sub Algorithm- Add_spell](image.png "Harry Potter Sub Algorithm- Add_spell")
+
 <br>  
----
---- 
+
+### **Harry Potter Sub Algorithm- View_spellbook**
+\
+![Harry Potter Sub Algorithm- View_spellbook](/images/Harry%20Potter%20Sub%20Algorithm-%20View_spellbook.png "Harry Potter Sub Algorithm- View_spellbook")
+
+
 
 ### **Harry Potter Sub Algorithm- View_spellbook**
 
@@ -129,13 +139,8 @@ BEGIN view_spellbook\
 &ensp; &ensp; ENDIF\
 END view_spellbook
 
-
-### **Harry Potter Sub Algorithm- View_spellbook**
-\
-![Harry Potter Sub Algorithm- View_spellbook](image.png "Harry Potter Sub Algorithm- View_spellbook")
 <br>  
----
---- 
+
 
 # *Data dictionary*
 
@@ -154,19 +159,39 @@ The program is able to run and store user inputs successfully and it displays th
 
 # *Maintenance*
 
-<u>Explain how you would handle issues caused by changes to the weather API over time.</u>
+<u>Explain how you would handle issues caused by changes to the API over time.</u>
 
-I would constantly update the system to stay compatible with the API, ensuring all modifications improve 
+I would constantly update the system to stay compatible with the API, ensuring all modifications will keep the system secure and functional.
 
-Explain how you would ensure the program remains compatible with new versions of Python and libraries like requests and matplotlib.
+<u>Explain how you would ensure the program remains compatible with new versions of Python and libraries like requests. </u>
 
-Describe the steps you would take to fix a bug found in the program after deployment.
+I would constantly refresh my code to stay compatible with newer versions of python to ensure that all the code is still functional and efficient.
 
-Outline how you would maintain clear documentation and ensure the program remains easy to update in the future.
+<u> Describe the steps you would take to fix a bug found in the program after deployment. </u>
 
+Once I find a bug in the program, I would immediately try to fix the code and constantly test it to ensure it is fixed. Once fixed, I would then push it to GitHub to keep it updated.
 
+<u>Outline how you would maintain clear documentation and ensure the program remains easy to update in the future.</u>
 
+I would maintain clear documentation to ensure the program is easy to understand by writing all the things completed in each push and how it impacted and improved the system.
 
+<br>   
+
+# *Final Evaluation*
+
+<u> Evaluate the current functionality of the program in terms of how well it addresses the functional and non-functional requirements. </u>
+
+The program completes the functional requirements of a system which can import data without loading a cvs file and using it to create a user interface for users to access. It can also be installed and handle errors fine. The program also completes non-functional requirements such as its efficiency, accessibility and instructions that all improve user experience.
+
+<u>Discuss areas for improvement or new features that could be added.</u>
+
+I would definitely improve on information displayed for the program. From personal knowledge and peer evaluation, not having the spell names in the program itself makes the whole experience far more troublesome due to the specific inputs needed, and without the API opened to assist users, it may be an unpleasant experience, as misspellings will return the user back to the main menu. I would also fix the search_spell function, as it currently does nothing, but I am unsure how to code the function to return the information due to the function using a different code from others because of the API's specifications. I was unable to find how to do it, but in the future I would most certainly like to improve on it and find a way to get all the information needed.
+
+<u>Evaluate how the project was managed throughout its development and maintenance, including your time management and how challenges were addressed during the software development lifecycle.</u>
+
+The project was managed well through its development, with the main focus on the code. My time management wasn't the best...but I will definitely improve on that in the future. I left the majority of the theory last as I could easily work on them from home with limited time and resources, which may have impacted the consistency of my GitHub pulls. Challenges I faced were mostly the code, but once that was fixed I could work on the theory easily.
+
+<br>   
 
 # *Testing and Debugging*
 
@@ -234,7 +259,7 @@ The next step would be the peer evaluation and the testing and debugging.
 **Commit - 7/4/2025**
 ---
 <u>1. Outline changes made to the code</u>\
-I completed the peer evaluation with Will and Erin, who very kindly provided very insightful feedback on my code. highlighting what it completed and what it should improve on.
+I completed the peer evaluation with Will and Erin, who very kindly provided very insightful feedback on my code, highlighting what was completed and what should be improved on.
 
 <u>2. Assess the impact of these changes.</u>\
 This was important as it helped me understand what I could improve on in the future to further enhance the API system.
@@ -252,10 +277,22 @@ I updated the README() file and the requirements.txt for the full instructions a
 This assists users in installing dependencies and gives users instructions necessary to run the software.
 
 <u>3.Outline the next steps.</u>\
+The next step would be the maintenance and final evaluation stages to identify how well my system has completed the requirements.
+
+\
+**Commit - 8/4/2025**
+---
+<u>1. Outline changes made to the code</u>\
+I finished the maintenance and the final evaluation stages.
+
+<u>2. Assess the impact of these changes.</u>\
+They address my time management and development skills during the project, explaining my steps through this task and what I should work on.
+
+<u>3.Outline the next steps.</u>\
 The next step would be the testing and debugging stage, where I use all my GitHub commits to prove my consistent work.
 
 \
-**Commit - 7/4/2025**
+**Commit - 8/4/2025**
 ---
 <u>1. Outline changes made to the code</u>\
 This is the testing and debugging stage, where I use all my commits and write this section.
