@@ -59,8 +59,10 @@ Possible errors include an invalid input for the main menu and functions. When i
 # *Design*
 
 ### **Gantt Chart**
-\
-hi
+
+![Gantt Chart](/images/Gantt%20Chart.png "Gantt Chart")
+
+<br>   
 
 ### **Harry Potter Structure Chart**
 
